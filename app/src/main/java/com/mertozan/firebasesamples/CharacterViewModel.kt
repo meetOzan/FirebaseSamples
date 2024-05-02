@@ -35,7 +35,7 @@ class CharacterViewModel : ViewModel() {
             }
     }
 
-    fun getCharactersFromFirestore() {
+    private fun getCharactersFromFirestore() {
         firestore.collection("characters")
             .get()
             .addOnSuccessListener { result ->
